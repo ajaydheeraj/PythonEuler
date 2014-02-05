@@ -5,4 +5,9 @@ print "Simplifying 1 to 10 yields(2^8 x 3^4 x 5^2 x 7)"
 print "we must multiply the highest power of each number and seeing as how these numbers are higher, the prime factorizations will be greatest for the numbers 1-20, 2^4 x 3 ^2 x 5 x 7 x 11 x 13 x 17 x 19"
 print 2**4 * 3**2 * 5 * 7 * 11 * 13 * 17 * 19
 
+# OR
 
+count = 1
+for i in range(1,21):
+    count = lcm(count,i+1) 
+print count
