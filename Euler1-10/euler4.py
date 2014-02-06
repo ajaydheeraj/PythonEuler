@@ -4,6 +4,6 @@ def euler4():
         for x in range(1000,900,-1):
             if str(i*x) == str(i*x)[::-1]:
                 l.append(i*x)
-    return sorted(l)[len(l)-1]
+    return l[-1]
 print euler4()         
             
