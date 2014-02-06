@@ -1,27 +1,9 @@
-from math import sqrt
-# def factor2(x):
-#     faclist=[]
-#     num = int(x**0.5)
-#     for i in range(num,2,-1):
-#         if x % i == 0:
-#             faclist.append(i)
-#     for c in faclist:
-#             sorted(faclist)
-#             print faclist
+from primesieve import *
+# The above code is excessively documented
 
-primes = [2]
-value = 3
-number = 600851475143
-while value < sqrt(number):
-    isPrime = True
-    for i in primes:
-        if  not value % i:
-            isPrime = False
-            value += 2
-    if isPrime:
-        primes.append(value)
-        if number % value == 0:
-            print value
-            number /= value
-print number
-print sorted(primes)
+p = sieve(int(600851475143**0.5)) #sieve up to the square root of number
+l = [] #empty list
+for i in p:
+    if 600851475143 % i == 0: # if a number in the sieve and the giant number divide evenly
+        l.append(i)
+print l[-1] #print the final element in the list
