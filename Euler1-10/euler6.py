@@ -4,3 +4,7 @@ def euler6(c):
     print square_of_sum - sum_of_square
 euler6(101)
 
+#or
+
+print sum(i for i in range(1,101))**2 -sum(i**2 for i in range(1,101))
+
