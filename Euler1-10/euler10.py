@@ -7,4 +7,4 @@ def sieve(n): # all primes under number
                 l[a] = False#mark them all false
     return [i for i,j in enumerate(l) if j == True]# return the values of the prime numbers
 
-print sum(sieve(2000001))
+print sum(sieve(2000000))
