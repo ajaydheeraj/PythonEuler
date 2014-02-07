@@ -11,4 +11,7 @@ while len(l) < 10002:
         l.append(x)
     x += 1
 
-print l[10001]
+print l[10000]
+ #OR
+from primesieve import *
+print sieve(1000000)[10000]
