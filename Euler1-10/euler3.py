@@ -3,7 +3,8 @@ from primesieve import *
 
 p = sieve(int(600851475143**0.5)) #sieve up to the square root of number
 l = [] #empty list
-for i in p:
-    if 600851475143 % i == 0: # if a number in the sieve and the giant number divide evenly
-        l.append(i)
-print l[-1] #print the final element in the list
+n = 600851475143
+for i in p[::-1]:
+    if n % i == 0: # if a number in the sieve(the largest) and the giant number divide evenly
+        print i #print the number
+        break   #we're done here
