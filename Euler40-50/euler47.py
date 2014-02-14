@@ -17,13 +17,13 @@ def factor(num):
 def u(num, l):
     return (len(factor(num)) == l)
 
-z = 2
+z = 4
 i = 2
 ncons = 0
 
 while ncons < z:
     if i % 100 == 0:
-        print(i)
+        print(i) #i can't stand a blank screen
     if u(i, z):
         ncons +=1
     else:
