@@ -5,5 +5,5 @@ def sieve(n): # all primes under number
         if l[i]:#if l[i] is true
             for a in xrange(i*i,n+1,i):#all remaining increments of i
                 l[a] = False#mark them all false
-    return [i for i,j in enumerate(l) if j == True]# return the values of the prime numbers
+    return [i for i,j in enumerate(l) if j]# return the values of the prime numbers
 
