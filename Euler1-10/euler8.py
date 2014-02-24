@@ -8,3 +8,4 @@ w = map(int,str(7316717653133062491922511967442657474235534919493496983520312774
 
 #This is the good one
 print max(w[i] * w[i+1] * w[i+2] * w[i+3] * w[i+4] for i in range(996))
+

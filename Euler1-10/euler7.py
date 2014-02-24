@@ -15,3 +15,4 @@ print l[10000]
  #OR
 from primesieve import *
 print sieve(1000000)[10000]
+#the 1000000 was just an arbitrarily long number
