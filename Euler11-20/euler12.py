@@ -18,6 +18,7 @@ that number is found for i in a range from 1 to the sqrt of the input if the inp
 the set weens out duplicates
 and the reduce constantly adds to the list, making it bigger
 found this on a stackoverflow forum, no credit taken!
+i have a regular one that i made, that isnt a one liner on the main page
 '''
 
 
