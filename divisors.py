@@ -5,5 +5,4 @@ def divisors2(x):
             s.add(i)
             s.add(x//i)
     return sorted(list(s))
-print divisors2(1000000000000000000)
 
