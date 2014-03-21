@@ -6,12 +6,11 @@ def isprime(n):
 
 l = []
 x = 2
-while len(l) < 10002:
+while len(l) < 10001:
     if isprime(x):
         l.append(x)
     x += 1
-
-print l[10000]
+print l[-1]
  #OR
 from primesieve import *
 print sieve(1000000)[10000]
